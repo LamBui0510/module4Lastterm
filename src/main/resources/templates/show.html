@@ -78,7 +78,7 @@
         <tbody>
         <tr th:each="u,loop : ${city}">
             <td th:text="*{loop.count}"></td>
-            <td th:text="*{u.cityName}"></td>
+            <td><a th:href="@{/detail(id=${u.id})}" th:text="*{u.cityName}"></a></td>
             <td th:text="*{u.squares}"></td>
             <td th:text="*{u.population}"></td>
             <td th:text="*{u.description}"></td>

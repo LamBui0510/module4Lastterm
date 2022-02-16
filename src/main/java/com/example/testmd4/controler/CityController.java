@@ -95,7 +95,7 @@ public class CityController {
     }
     @GetMapping ("detail")
     public ModelAndView detail(@RequestParam long id) {
-        ModelAndView modelAndView = new ModelAndView("detailCity");
+        ModelAndView modelAndView = new ModelAndView("cityDetail");
         modelAndView.addObject("city" , cityService.findById(id));
         return modelAndView;
     }
